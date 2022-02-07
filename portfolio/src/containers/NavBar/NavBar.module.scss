@@ -1,0 +1,28 @@
+@import "../../assets/styling/flex-mix.scss";
+@import "../../assets/styling/media.scss";
+
+.navbar {
+    height: 100px;
+    width: 100%;
+    background-color: rgba(38, 37, 36, 0.316);
+    @include flexMix(column, space-evenly, center);
+
+    @include mqtablet {
+        @include flexMix(column, space-evenly, center);
+        height: 100%;
+        width: 200px;
+        position: fixed;
+        margin: 0px;
+    }
+
+    &--button-row {
+        width: 100%;
+        @include flexMix(row, space-evenly, unset);
+
+        @include mqtablet {
+            @include flexMix(column, space-evenly, center);
+            height: 100%;
+            width: 200px;
+        }
+    }
+}

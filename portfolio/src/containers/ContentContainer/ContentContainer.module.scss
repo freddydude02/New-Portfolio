@@ -1,0 +1,16 @@
+@import "../../assets/styling/flex-mix.scss";
+@import "../../assets/styling/media.scss";
+
+.page {
+    @include flexMix(column, unset, center);
+    margin: 0px 40px;
+    // width: 100vw;
+    height: 180vh;
+
+    @include mqtablet {
+        @include flexMix(column, unset, center);
+        // padding-top: 20vh;
+        height: 100vw;
+        margin-left: 200px;
+    }
+}

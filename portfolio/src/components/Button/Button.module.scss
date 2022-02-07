@@ -1,0 +1,17 @@
+@import "../../assets/styling/themes.scss";
+
+.button {
+    text-decoration: none;
+
+    &__border {
+        border-radius: 15px;
+        padding: 3px 7px;
+    }
+    &__hover:hover {
+        background-color: $onPrimary;
+        color: $strong;
+    }
+    &__onclick:active {
+        background-color: $onTertiary;
+    }
+}

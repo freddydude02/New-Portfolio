@@ -1,0 +1,35 @@
+@import "../../assets/styling/themes.scss";
+@import "../../assets/styling/flex-mix.scss";
+@import "../../assets/styling/media.scss";
+
+.page {
+    @include flexMix(column, unset, center);
+    margin: 0px 40px;
+    // width: 100vw;
+    // height: 180vh;
+
+    @include mqtablet {
+        @include flexMix(column, unset, center);
+        // padding-top: 20vh;
+        height: 100vw;
+        margin-left: 200px;
+    }
+}
+.card {
+    @include flexMix(column, unset, center);
+
+    &__contact {
+        width: 400px;
+        height: 400px;
+        border-radius: 15px;
+        background-color: $variable;
+    }
+    &__title {
+        height: 10%;
+        justify-content: center;
+    }
+    &__text {
+        @include flexMix(column, space-evenly, unset);
+        height: 90%;
+    }
+}

@@ -1,0 +1,42 @@
+$primary: #14141470;
+$onPrimary: #b4ad94;
+$primaryContainer: #111111;
+$onPrimaryContainer: #b4ad94bb;
+$secondary: #ddd6c2bb;
+$onSecondary: #d8d0bebb;
+$secondaryContainer: #e0d6bfbb;
+$onSecondaryContainer: #7a7976bb;
+$tertiary: #387dcc;
+$onTertiary: #88b4e7;
+$tertiaryContainer: #93c3d1;
+$onTertiaryContainer: #6e8a92;
+$strong: rgb(0, 0, 0);
+$onStrong: rgb(241, 241, 241);
+$strongContainer: white;
+$onStrongContainer: rgb(250, 240, 240);
+$weak: #b4ad94cb;
+$onWeak: #585444;
+$variable: #58544454;
+
+* {
+    padding: 0px;
+    margin: 0px;
+    font-family: Arial, Helvetica, sans-serif;
+    list-style-type: none;
+    text-decoration: none;
+}
+i {
+    color: $weak;
+}
+p {
+    color: $onPrimaryContainer;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+a {
+    color: $weak;
+}

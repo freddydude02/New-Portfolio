@@ -1,0 +1,41 @@
+@import "./assets/styling/media.scss";
+@import "./assets/styling/flex-mix.scss";
+
+.App {
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    @include flexMix(column, unset, center);
+    // background-color: theme.$primaryContainer;
+    background-image: url(./images/stars.jpg);
+    background-size: 2250px;
+    background-repeat: repeat;
+    height: 100%;
+    width: 100%;
+    @include mqtablet {
+        @include flexMix(row, unset, unset);
+        height: 100vw;
+        background-size: 1500px;
+        background-repeat: repeat;
+    }
+    @include mqdesktop {
+        @include flexMix(row, unset, unset);
+        height: 100vw;
+        background-size: 1750px;
+        background-repeat: repeat;
+    }
+    @include mqdesktopxl {
+        @include flexMix(row, unset, unset);
+        height: 100vw;
+        background-size: 2250px;
+        background-repeat: repeat;
+    }
+    @include mqdesktopxxl {
+        @include flexMix(row, unset, unset);
+        height: 100vw;
+        background-size: 2750px;
+        background-repeat: repeat;
+    }
+}
