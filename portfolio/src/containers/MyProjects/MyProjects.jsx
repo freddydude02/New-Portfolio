@@ -1,4 +1,3 @@
-import styles from "./MyProjects.module.scss";
 const MyProjects = () => {
     return (
         <div>

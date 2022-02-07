@@ -9,10 +9,10 @@
     // height: 180vh;
 
     @include mqtablet {
-        @include flexMix(column, unset, center);
+        @include flexMix(column, unset, unset);
         // padding-top: 20vh;
-        height: 100vw;
-        margin-left: 200px;
+        // height: 100vw;
+        // margin-left: 200px;
     }
 }
 .card {
