@@ -5,12 +5,12 @@
     @include flexMix(column, unset, center);
     margin: 0px 40px;
     // width: 100vw;
-    height: 180vh;
+    height: 100em;
 
     @include mqtablet {
         @include flexMix(column, unset, center);
         // padding-top: 20vh;
-        height: 100vw;
+        height: 100em;
         margin-left: 200px;
     }
 }
